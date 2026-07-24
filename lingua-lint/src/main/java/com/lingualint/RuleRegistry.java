@@ -1,11 +1,14 @@
 package com.lingualint;
 
+import com.lingualint.rules.ArticleAgreementRule;
 import com.lingualint.rules.CapitalizationRule;
 import com.lingualint.rules.FillerWordRule;
 import com.lingualint.rules.PassiveVoiceRule;
 import com.lingualint.rules.ReadabilityRule;
+import com.lingualint.rules.RedundantPhraseRule;
 import com.lingualint.rules.RepeatedWordRule;
 import com.lingualint.rules.Rule;
+import com.lingualint.rules.SentenceLengthRule;
 
 import java.util.List;
 import java.util.Set;
@@ -23,7 +26,10 @@ public final class RuleRegistry {
                 new PassiveVoiceRule(),
                 new CapitalizationRule(),
                 new FillerWordRule(),
-                new ReadabilityRule()
+                new ReadabilityRule(),
+                new ArticleAgreementRule(),
+                new RedundantPhraseRule(),
+                new SentenceLengthRule()
         );
     }
 
